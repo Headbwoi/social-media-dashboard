@@ -1,0 +1,17 @@
+{
+  "name": "social-media-dashboard-with-theme-switcher-master",
+  "version": "1.0.0",
+  "description": "social media dashboard with theme switcher",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i src/input.css -o public/output.css --watch",
+    "build": "npx tailwindcss -i src/input.css -o public/output.css --minify"
+  },
+  "keywords": [
+    "Social",
+    "media",
+    "dashboard"
+  ],
+  "author": "Headbwoi",
+  "license": "MIT"
+}
