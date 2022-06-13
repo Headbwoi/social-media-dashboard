@@ -20,6 +20,16 @@ body.dark{
     --Text: hsl(0, 0%, 100%);
     --toggleBg: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
-
+.bg-image{
+    background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+.instagram{
+    border-image: red;
+}
+input[type="checkbox"]:checked ~ .check::before{
+    right: 4px;
+    top: 50%;
+    transform: translate(140%, -50%);
+}
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }

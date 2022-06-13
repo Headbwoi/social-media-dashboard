@@ -10,7 +10,7 @@ module.exports = {
     screens: {
       sm: "640px",
       md: "768px",
-      lg: "1115px",
+      lg: "1119px",
     },
     colors: {
       limeGreen: "hsl(163, 72%, 41%)",
