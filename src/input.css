@@ -20,11 +20,13 @@ body.dark{
     --Text: hsl(0, 0%, 100%);
     --toggleBg: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
-.bg-image{
+.bg-image-dark{
     background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
-.instagram{
-    border-image: red;
+.instagram::before{
+
+    border-radius: 6px;
+    background-image: linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
 }
 input[type="checkbox"]:checked ~ .check::before{
     right: 4px;
@@ -32,4 +34,5 @@ input[type="checkbox"]:checked ~ .check::before{
     transform: translate(140%, -50%);
 }
 .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(329, 70%, 58%); }
+
