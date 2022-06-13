@@ -4,35 +4,57 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    --BG: hsl(0, 0%, 100%);
-    --topBGPattern: hsl(225, 100%, 98%);
-    --cardBG: hsl(227, 47%, 96%);
-    --bluetext: hsl(228, 12%, 44%);
-    --Text: hsl(230, 17%, 14%);
-    --toggleBg: hsl(230, 22%, 74%);
+body {
+  --BG: hsl(0, 0%, 100%);
+  --topBGPattern: hsl(225, 100%, 98%);
+  --cardBG: hsl(227, 47%, 96%);
+  --bluetext: hsl(228, 12%, 44%);
+  --Text: hsl(230, 17%, 14%);
+  --toggleBg: hsl(230, 22%, 74%);
+  --toggleBgCard: hsla(230, 22%, 74%, 0.5);
 }
-body.dark{
-    --BG: hsl(230, 17%, 14%);
-    --topBGPattern: hsl(232, 19%, 15%);
-    --cardBG: hsl(228, 28%, 20%);
-    --bluetext: hsl(228, 34%, 66%);
-    --Text: hsl(0, 0%, 100%);
-    --toggleBg: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+body.dark {
+  --BG: hsl(230, 17%, 14%);
+  --topBGPattern: hsl(232, 19%, 15%);
+  --cardBG: hsl(228, 28%, 20%);
+  --bluetext: hsl(228, 34%, 66%);
+  --Text: hsl(0, 0%, 100%);
+  --toggleBgCard: hsla(210, 78%, 56%, 0.2);
 }
-.bg-image-dark{
-    background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+.bg-image-dark {
+  background-image: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
 }
-.instagram::before{
-
-    border-radius: 6px;
-    background-image: linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+.bg-image-light {
+  background-color: var(--toggleBg);
 }
-input[type="checkbox"]:checked ~ .check::before{
-    right: 4px;
-    top: 50%;
-    transform: translate(140%, -50%);
+.instagram::before {
+  border-radius: 6px;
+  background-image: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  );
 }
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(329, 70%, 58%); }
-
+.check:hover {
+  background-image: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+}
+input[type="checkbox"]:checked ~ .check::before {
+  right: 4px;
+  top: 50%;
+  transform: translate(140%, -50%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(329, 70%, 58%);
+}

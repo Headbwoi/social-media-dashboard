@@ -26,6 +26,7 @@ module.exports = {
       blueText: "var(--bluetext)",
       Text: "var(--Text)",
       toggleBg: "var(--toggleBg)",
+      toggleBgCard: "var(--toggleBgCard)",
     },
     extend: {},
   },
