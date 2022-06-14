@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://headbwoi.github.io/social-media-dashboard/)
+- Live Site URL: [live site](https://headbwoi.github.io/social-media-dashboard/)
 
 ## My process
 
